@@ -16,7 +16,7 @@ resource "azurerm_virtual_network" "vnet" {
 resource "azurerm_subnet" "subnet" {
   # name                 = "${var.subnet_names[count.index]}"
   for_each             = "${var.subnets}"
-  name                 = "${each.key}"
+  name                 = "${[each.key]}"
   virtual_network_name = "${azurerm_virtual_network.vnet.name}"
   resource_group_name  = "${azurerm_resource_group.network.name}"
   # address_prefix       = "${var.subnet_prefixes[count.index]}"
