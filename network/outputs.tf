@@ -20,11 +20,6 @@ output "vnet_address_space" {
 
 output "vnet_subnets" {
   description = "The ids of subnets created inside the newl Virtual Network"
-  value       = "${azurerm_subnet.subnet.*.id}"
-  # for_each    = "${var.subnets}"
-#   # value       = "${each.key.id}"
-#   value = {
-#     for subnet in var.subnets:
-#       subnet.name => subnet.id
-  # }
+  value       = "${azurerm_subnet.subnet}"
+  
 }

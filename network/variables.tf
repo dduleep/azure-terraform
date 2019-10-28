@@ -28,11 +28,6 @@ variable "subnet_prefixes" {
   default     = ["10.0.1.0/24"]
 }
 
-variable "subnet_names" {
-  description = "A list of public subnets inside the vNet."
-  default     = ["subnet1"]
-}
-
 variable "tags" {
   description = "The tags to associate with your network and subnets."
   type        = "map"
@@ -47,8 +42,8 @@ variable "subnets" {
   description = "subnets name with associate subnet address space name=\"subnet_address_space\""
   type        = "map"
   default     = {
-    subnet1 = "10.0.1.0/24"
-    subnet2 = "10.0.2.0/24"
+    "subnet1" = "10.0.1.0/24"
+    "subnet2" = "10.0.2.0/24"
   }
 
 }
