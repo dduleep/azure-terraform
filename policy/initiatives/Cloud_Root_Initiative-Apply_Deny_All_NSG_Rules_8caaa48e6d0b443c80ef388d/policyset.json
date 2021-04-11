@@ -1,0 +1,105 @@
+{
+ "properties": {
+  "displayName": "Cloud Root Initiative-Apply Deny All NSG Rules",
+  "policyType": "Custom",
+  "description": "Policy to apply Deny All Inbound and Outbound NSG Rules",
+  "metadata": {
+   "category": "Policy Collection",
+   "createdBy": "c5792911-3fc6-42ca-87ee-ad262115b608",
+   "createdOn": "2021-04-11T07:05:17.9767005Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Cloud Prod Append Inbound NSG Rules_1",
+    "policyDefinitionId": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d/providers/Microsoft.Authorization/policyDefinitions/bd805c2a-ea65-4ca9-ae20-802e947b33d7",
+    "parameters": {
+     "name": {
+      "value": "DenyInbound"
+     },
+     "protocol": {
+      "value": "*"
+     },
+     "sourcePortRange": {
+      "value": [
+       "*"
+      ]
+     },
+     "destinationPortRange": {
+      "value": [
+       "*"
+      ]
+     },
+     "sourceAddressPrefix": {
+      "value": [
+       "*"
+      ]
+     },
+     "destinationAddressPrefix": {
+      "value": [
+       "*"
+      ]
+     },
+     "access": {
+      "value": "Deny"
+     },
+     "priority": {
+      "value": 400
+     },
+     "direction": {
+      "value": "Inbound"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Cloud Prod Append Outbound NSG Rules_1",
+    "policyDefinitionId": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d/providers/Microsoft.Authorization/policyDefinitions/7fac8780-9937-448c-b503-a079e34068d9",
+    "parameters": {
+     "name": {
+      "value": "DenyOutBound"
+     },
+     "protocol": {
+      "value": "*"
+     },
+     "sourcePortRange": {
+      "value": [
+       "*"
+      ]
+     },
+     "destinationPortRange": {
+      "value": [
+       "*"
+      ]
+     },
+     "sourceAddressPrefix": {
+      "value": [
+       "*"
+      ]
+     },
+     "destinationAddressPrefix": {
+      "value": [
+       "*"
+      ]
+     },
+     "access": {
+      "value": "Deny"
+     },
+     "priority": {
+      "value": 4000
+     },
+     "direction": {
+      "value": "*"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d/providers/Microsoft.Authorization/policySetDefinitions/8caaa48e6d0b443c80ef388d",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "8caaa48e6d0b443c80ef388d"
+}

@@ -1,0 +1,117 @@
+{
+ "properties": {
+  "displayName": "Cloud Default Tags Audit Policy",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "Policy to auidt existence of Cloud Default Tags",
+  "metadata": {
+   "category": "Policy Collection",
+   "createdBy": "c5792911-3fc6-42ca-87ee-ad262115b608",
+   "createdOn": "2021-04-11T05:58:27.2027159Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "tagName1": {
+    "type": "String",
+    "metadata": {
+     "displayName": "tagName1",
+     "description": "Tage Name 1"
+    }
+   },
+   "tagName2": {
+    "type": "String",
+    "metadata": {
+     "displayName": "tagName2",
+     "description": "Tag Name 2"
+    }
+   },
+   "tagName3": {
+    "type": "String",
+    "metadata": {
+     "displayName": "tagName3",
+     "description": "Tag Name 3"
+    }
+   },
+   "tagName4": {
+    "type": "String",
+    "metadata": {
+     "displayName": "tagName4",
+     "description": "Tage Name 4"
+    }
+   },
+   "tagName5": {
+    "type": "String",
+    "metadata": {
+     "displayName": "tagName5",
+     "description": "Tag Name 5"
+    }
+   },
+   "tagName6": {
+    "type": "String",
+    "metadata": {
+     "displayName": "tagName6",
+     "description": "Tag Name 6"
+    }
+   },
+   "tagName7": {
+    "type": "String",
+    "metadata": {
+     "displayName": "tagName7",
+     "description": "Tag Name 7"
+    }
+   },
+   "tagName8": {
+    "type": "String",
+    "metadata": {
+     "displayName": "tagName8",
+     "description": "Tag Name 8"
+    }
+   }
+  },
+  "policyRule": {
+   "if": {
+    "anyOf": [
+     {
+      "field": "[concat('tags[', parameters('tagName1'), ']')]",
+      "exists": "false"
+     },
+     {
+      "field": "[concat('tags[', parameters('tagName2'), ']')]",
+      "exists": "false"
+     },
+     {
+      "field": "[concat('tags[', parameters('tagName3'), ']')]",
+      "exists": "false"
+     },
+     {
+      "field": "[concat('tags[', parameters('tagName4'), ']')]",
+      "exists": "false"
+     },
+     {
+      "field": "[concat('tags[', parameters('tagName5'), ']')]",
+      "exists": "false"
+     },
+     {
+      "field": "[concat('tags[', parameters('tagName6'), ']')]",
+      "exists": "false"
+     },
+     {
+      "field": "[concat('tags[', parameters('tagName7'), ']')]",
+      "exists": "false"
+     },
+     {
+      "field": "[concat('tags[', parameters('tagName8'), ']')]",
+      "exists": "false"
+     }
+    ]
+   },
+   "then": {
+    "effect": "audit"
+   }
+  }
+ },
+ "id": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d/providers/Microsoft.Authorization/policyDefinitions/25b87cb1-ec06-43c1-98eb-82ad596b9bf7",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "25b87cb1-ec06-43c1-98eb-82ad596b9bf7"
+}

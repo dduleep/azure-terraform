@@ -1,0 +1,25 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Cloud Root Initiative-Apply Deny All NSG Rules",
+  "policyDefinitionId": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d/providers/Microsoft.Authorization/policySetDefinitions/8caaa48e6d0b443c80ef388d",
+  "scope": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "Duleep Dissanayaka",
+   "parameterScopes": {},
+   "createdBy": "c5792911-3fc6-42ca-87ee-ad262115b608",
+   "createdOn": "2021-04-11T07:55:45.0491959Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d/providers/Microsoft.Authorization/policyAssignments/1028cca269ad43a4babd2fa4",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "1028cca269ad43a4babd2fa4"
+}
