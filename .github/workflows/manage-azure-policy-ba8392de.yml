@@ -1,0 +1,40 @@
+name: manage-azure-policy-ba8392de
+on:
+  workflow_dispatch:
+    inputs:
+      remarks:
+        description: 'Reason for triggering the workflow run'
+        required: false
+        default: 'Updating Azure Policies'
+
+
+## Uncomment the following if you wish to automatically trigger workflow run with every commit
+#
+#  push:
+#    paths:
+#      - 'policy/policies/Cloud_Default_Tags_Audit_Policy_25b87cb1-ec06-43c1-98eb-82ad596b9bf7/**'
+#      - 'policy/policies/Cloud_Prod_Append_Outbound_NSG_Rules_7fac8780-9937-448c-b503-a079e34068d9/**'
+#      - 'policy/policies/Append_tag_and_its_default_value1_append-tag-default-value/**'
+#      - 'policy/policies/Cloud_Prod_Append_Inbound_NSG_Rules_bd805c2a-ea65-4ca9-ae20-802e947b33d7/**'
+#      - 'policy/initiatives/Cloud_Root_Initiative-Apply_Deny_All_NSG_Rules_8caaa48e6d0b443c80ef388d/**'
+#      - .github/workflows/manage-azure-policy-ba8392de.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_ba8392de}}
+        allow-no-subscriptions: true
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          policy/policies/Cloud_Default_Tags_Audit_Policy_25b87cb1-ec06-43c1-98eb-82ad596b9bf7/**
+          policy/policies/Cloud_Prod_Append_Outbound_NSG_Rules_7fac8780-9937-448c-b503-a079e34068d9/**
+          policy/policies/Append_tag_and_its_default_value1_append-tag-default-value/**
+          policy/policies/Cloud_Prod_Append_Inbound_NSG_Rules_bd805c2a-ea65-4ca9-ae20-802e947b33d7/**
+          policy/initiatives/Cloud_Root_Initiative-Apply_Deny_All_NSG_Rules_8caaa48e6d0b443c80ef388d/**
