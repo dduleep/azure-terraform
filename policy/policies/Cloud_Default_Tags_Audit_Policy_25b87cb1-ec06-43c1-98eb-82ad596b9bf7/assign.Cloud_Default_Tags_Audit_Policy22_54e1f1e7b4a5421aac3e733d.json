@@ -1,0 +1,51 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Cloud Default Tags Audit Policy22",
+  "policyDefinitionId": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d/providers/Microsoft.Authorization/policyDefinitions/25b87cb1-ec06-43c1-98eb-82ad596b9bf7",
+  "scope": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d",
+  "notScopes": [],
+  "parameters": {
+   "tagName1": {
+    "value": "test2"
+   },
+   "tagName2": {
+    "value": "test2"
+   },
+   "tagName3": {
+    "value": "test2"
+   },
+   "tagName4": {
+    "value": "test2"
+   },
+   "tagName5": {
+    "value": "test2"
+   },
+   "tagName6": {
+    "value": "test2"
+   },
+   "tagName7": {
+    "value": "test2"
+   },
+   "tagName8": {
+    "value": "test2"
+   }
+  },
+  "description": "assignment 2",
+  "metadata": {
+   "assignedBy": "Duleep Dissanayaka",
+   "parameterScopes": {},
+   "createdBy": "c5792911-3fc6-42ca-87ee-ad262115b608",
+   "createdOn": "2021-04-14T12:13:35.5756297Z",
+   "updatedBy": "c5792911-3fc6-42ca-87ee-ad262115b608",
+   "updatedOn": "2021-04-14T12:14:04.7005593Z"
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d/providers/Microsoft.Authorization/policyAssignments/54e1f1e7b4a5421aac3e733d",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "54e1f1e7b4a5421aac3e733d"
+}

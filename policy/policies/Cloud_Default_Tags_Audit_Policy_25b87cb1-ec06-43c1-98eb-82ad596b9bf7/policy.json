@@ -3,11 +3,11 @@
   "displayName": "Cloud Default Tags Audit Policy",
   "policyType": "Custom",
   "mode": "Indexed",
-  "description": "Policy to auidt existence of Cloud Default Tags",
+  "description": "",
   "metadata": {
    "category": "Policy Collection",
-   "createdBy": "c5792911-3fc6-42ca-87ee-ad262115b608",
-   "createdOn": "2021-04-11T05:58:27.2027159Z",
+   "createdBy": "00b8d679-8a1d-4795-ae8d-9ddbf79c15e5",
+   "createdOn": "2021-04-12T13:23:35.6246312Z",
    "updatedBy": null,
    "updatedOn": null
   },
@@ -15,57 +15,57 @@
    "tagName1": {
     "type": "String",
     "metadata": {
-     "displayName": "tagName1",
-     "description": "Tage Name 1"
+     "description": "Tage Name 1",
+     "displayName": "tagName1"
     }
    },
    "tagName2": {
     "type": "String",
     "metadata": {
-     "displayName": "tagName2",
-     "description": "Tag Name 2"
+     "description": "Tag Name 2",
+     "displayName": "tagName2"
     }
    },
    "tagName3": {
     "type": "String",
     "metadata": {
-     "displayName": "tagName3",
-     "description": "Tag Name 3"
+     "description": "Tag Name 3",
+     "displayName": "tagName3"
     }
    },
    "tagName4": {
     "type": "String",
     "metadata": {
-     "displayName": "tagName4",
-     "description": "Tage Name 4"
+     "description": "Tage Name 4",
+     "displayName": "tagName4"
     }
    },
    "tagName5": {
     "type": "String",
     "metadata": {
-     "displayName": "tagName5",
-     "description": "Tag Name 5"
+     "description": "Tag Name 5",
+     "displayName": "tagName5"
     }
    },
    "tagName6": {
     "type": "String",
     "metadata": {
-     "displayName": "tagName6",
-     "description": "Tag Name 6"
+     "description": "Tag Name 6",
+     "displayName": "tagName6"
     }
    },
    "tagName7": {
     "type": "String",
     "metadata": {
-     "displayName": "tagName7",
-     "description": "Tag Name 7"
+     "description": "Tag Name 7",
+     "displayName": "tagName7"
     }
    },
    "tagName8": {
     "type": "String",
     "metadata": {
-     "displayName": "tagName8",
-     "description": "Tag Name 8"
+     "description": "Tag Name 8",
+     "displayName": "tagName8"
     }
    }
   },
@@ -73,36 +73,36 @@
    "if": {
     "anyOf": [
      {
-      "field": "[concat('tags[', parameters('tagName1'), ']')]",
-      "exists": "false"
+      "exists": "false",
+      "field": "[concat('tags[', parameters('tagName1'), ']')]"
      },
      {
-      "field": "[concat('tags[', parameters('tagName2'), ']')]",
-      "exists": "false"
+      "exists": "false",
+      "field": "[concat('tags[', parameters('tagName2'), ']')]"
      },
      {
-      "field": "[concat('tags[', parameters('tagName3'), ']')]",
-      "exists": "false"
+      "exists": "false",
+      "field": "[concat('tags[', parameters('tagName3'), ']')]"
      },
      {
-      "field": "[concat('tags[', parameters('tagName4'), ']')]",
-      "exists": "false"
+      "exists": "false",
+      "field": "[concat('tags[', parameters('tagName4'), ']')]"
      },
      {
-      "field": "[concat('tags[', parameters('tagName5'), ']')]",
-      "exists": "false"
+      "exists": "false",
+      "field": "[concat('tags[', parameters('tagName5'), ']')]"
      },
      {
-      "field": "[concat('tags[', parameters('tagName6'), ']')]",
-      "exists": "false"
+      "exists": "false",
+      "field": "[concat('tags[', parameters('tagName6'), ']')]"
      },
      {
-      "field": "[concat('tags[', parameters('tagName7'), ']')]",
-      "exists": "false"
+      "exists": "false",
+      "field": "[concat('tags[', parameters('tagName7'), ']')]"
      },
      {
-      "field": "[concat('tags[', parameters('tagName8'), ']')]",
-      "exists": "false"
+      "exists": "false",
+      "field": "[concat('tags[', parameters('tagName8'), ']')]"
      }
     ]
    },

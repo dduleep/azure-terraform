@@ -1,0 +1,50 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Cloud Default Tags Audit Policy Duleep",
+  "policyDefinitionId": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d/providers/Microsoft.Authorization/policyDefinitions/25b87cb1-ec06-43c1-98eb-82ad596b9bf7",
+  "scope": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d",
+  "parameters": {
+   "tagName1": {
+    "value": "Owner"
+   },
+   "tagName2": {
+    "value": "CostCenter"
+   },
+   "tagName3": {
+    "value": "Project"
+   },
+   "tagName4": {
+    "value": "Dept"
+   },
+   "tagName5": {
+    "value": "Maintainer"
+   },
+   "tagName6": {
+    "value": "Criticality"
+   },
+   "tagName7": {
+    "value": "Environment"
+   },
+   "tagName8": {
+    "value": "ServiceName"
+   }
+  },
+  "description": "Cloud Default Tags Audit Policy Duleep",
+  "metadata": {
+   "assignedBy": "Duleep Dissanayaka",
+   "createdBy": "00b8d679-8a1d-4795-ae8d-9ddbf79c15e5",
+   "createdOn": "2021-04-14T08:57:16.9014667Z",
+   "parameterScopes": {},
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/26ecb924-40d0-487a-906c-dfafc74c0b8d/providers/Microsoft.Authorization/policyAssignments/db9036991bbe41c8b1cbeb22_duleep",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "db9036991bbe41c8b1cbeb22_duleep"
+}
